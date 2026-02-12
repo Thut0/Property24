@@ -61,3 +61,57 @@ SELECT *
 FROM [Property24].[dbo].[1770794941712_property24]
 ORDER BY FLOOR_SIZE ASC
 ;
+
+-- Question 11
+
+SELECT *
+FROM [Property24].[dbo].[1770794941712_property24]
+WHERE PROVINCE = 'Gauteng'
+ORDER BY Monthly_Repayment
+;
+
+-- Question 12
+
+SELECT *
+FROM [Property24].[dbo].[1770794941712_property24]
+WHERE PROVINCE = 'Western Cape' AND PROPERTY_PRICE < 3000000
+;
+
+-- Question 13
+
+SELECT *
+FROM [Property24].[dbo].[1770794941712_property24]
+WHERE PROVINCE = 'KwaZulu-Natal' AND BEDROOMS >= 3
+;
+
+-- Question 14
+
+SELECT *
+FROM [Property24].[dbo].[1770794941712_property24]
+WHERE PROVINCE = 'Limpopo' OR PROVINCE = 'Free State'
+ORDER BY PROPERTY_PRICE
+;
+
+-- Question 15
+
+SELECT TOP (10) *
+FROM [Property24].[dbo].[1770794941712_property24]
+ORDER BY PROPERTY_PRICE DESC
+;
+
+-- Question 16
+
+SELECT TOP (5) *
+FROM [Property24].[dbo].[1770794941712_property24]
+ORDER BY PROPERTY_PRICE ASC
+;
+
+-- Question 17
+
+SELECT TOP (10) *
+FROM [Property24].[dbo].[1770794941712_property24]
+ORDER BY FLOOR_SIZE DESC
+;
+
+-- Question 18
+
