@@ -115,3 +115,21 @@ ORDER BY FLOOR_SIZE DESC
 
 -- Question 18
 
+SELECT TOP (1) PROVINCE, MAX(PROPERTY_PRICE) AS Highest_Price
+FROM [Property24].[dbo].[1770794941712_property24]
+GROUP BY PROVINCE
+;
+
+-- Question 19
+
+SELECT CITY, AVG(PROPERTY_PRICE) AS AvgPrice
+FROM [Property24].[dbo].[1770794941712_property24]
+GROUP BY CITY
+ORDER BY AvgPrice ASC;
+
+-- Question 20
+
+SELECT MIN(Min_gross_monthly_income) AS Min_Income_Required
+FROM [Property24].[dbo].[1770794941712_property24]
+WHERE PROPERTY_PRICE > 4000000
+;
